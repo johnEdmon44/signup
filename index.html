@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="index.js" defer></script>
+  <script src="./index.js" defer></script>
 </head>
 <body>
   <section class="container">
@@ -37,8 +37,9 @@
         <p>And much more!</p>
       </div>
 
-      <form action="#" method="post">
+      <form action="#" method="post" id="subcription--form" novalidate>
         <label for="email">Email address</label>
+        <span class="email--error" id="email--error">Valid email required</span>
         <input id="email" name="email" type="email" placeholder="email@company.com" required>
         <button type="submit">Subscribe to monthly newspaper</button> 
       </form>
